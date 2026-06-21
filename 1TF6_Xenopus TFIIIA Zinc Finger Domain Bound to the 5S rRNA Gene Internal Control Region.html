@@ -22,6 +22,9 @@ stage.loadFile(blob, {ext:"cif"}).then(function(comp){
 comp.addRepresentation("ball+stick", {
     sele: "not protein"
 });
+comp.addRepresentation("cartoon", {
+    sele: "not protein"
+});
     comp.autoView();
 }).catch(function(err){
     document.body.innerHTML = "<pre>"+err+"</pre>";
